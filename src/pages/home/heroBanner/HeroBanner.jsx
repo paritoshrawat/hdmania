@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import Img from '../../../components/lazyLoadingImage/Img';
 import ContentWrapper from '../../../components/contentWrapper/ContentWrapper';
 
-const HeroBanner = () => {
+const heroBanner = () => {
   const [background,setBackground] = useState("");
   const [query,setQuery] = useState("");
   const navigate = useNavigate();
@@ -60,4 +60,4 @@ const {data,loading } = useFetch("/movie/upcoming");
   )
 }
 
-export default HeroBanner
+export default heroBanner
