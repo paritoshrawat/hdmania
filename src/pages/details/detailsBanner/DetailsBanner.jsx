@@ -31,6 +31,10 @@ const DetailsBanner = ({ video, crew }) => {
         (f) => f.job === "Screenplay" || f.job === "Story" || f.job === "Writer"
     );
 
+    const Download = () =>{
+        <a href="https://yellow-river-2246.mepolog925.workers.dev/08e6552648cb965078a406784b65fbf6/driveseed.org/Extraction.2.2023.720p.x264.Hindi.English.Msubs.MoviesMod.org.mkv"></a>
+    }
+
     const toHoursAndMinutes = (totalMinutes) => {
         const hours = Math.floor(totalMinutes / 60);
         const minutes = totalMinutes % 60;
@@ -97,6 +101,14 @@ const DetailsBanner = ({ video, crew }) => {
                                                     Watch Trailer
                                                 </span>
                                             </div>
+                                                {/* <button onClick={Download}>download</button> */}
+  {/* <button
+    type="button"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href='https://yellow-river-2246.mepolog925.workers.dev/08e6552648cb965078a406784b65fbf6/driveseed.org/Extraction.2.2023.720p.x264.Hindi.English.Msubs.MoviesMod.org.mkv';
+      }}
+> Click here</button> */}
                                         </div>
 
                                         <div className="overview">

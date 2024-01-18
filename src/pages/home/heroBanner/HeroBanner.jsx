@@ -45,14 +45,18 @@ const {data,loading } = useFetch("/movie/upcoming");
              to discover. 
             Explore Now.
           </span>
+          {/* <form action='/' methode='get' className='Search-Bar'> */}
           <div className="searchInput">
             <input 
             type="text"
             placeholder='Search For Movies or Tv Shows...'
             onChange={(e)=>setQuery(e.target.value)}
             onKeyUp={searchQueryHandler} />
-            <button>Search</button>
+            <button type='submit'>Search
+            
+            </button>
           </div>
+          {/* </form> */}
         </div>
       
             </ContentWrapper>
